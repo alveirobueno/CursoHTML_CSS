@@ -119,6 +119,58 @@
             </section>
 
             <section>
+                <h1>Autocompletar con información obligatoria</h1>
+                <form action="">
+                    <label for="nombre">
+                        <span>¿Cuál es tu nombre?</span>
+                        <input type="text" name="nombre" id="nombre" autocomplete="name" required>
+                    </label>
+
+                    <label for="correo">
+                        <span>¿Cuál es tu correo?</span>
+                        <input type="email" name="correo" id="correo" autocomplete="email" required>
+                    </label>
+
+                    <label for="pais">
+                        <span>¿Cuál es tu país?</span>
+                        <input type="text" name="pais" id="pais" autocomplete="country" required>
+                    </label>
+
+                    <label for="postal">
+                        <span>¿Cuál es tu código postal?</span>
+                        <input type="number" name="postal" id="postal" autocomplete="postal-code" required>
+                    </label>
+                    <input type="submit">
+                </form>
+            </section>
+
+            <section>
+                <h1>Etiqueta Select FUNCIONA PERO NO ES LA MEJOR OPCIÓN</h1>
+                <select name="Cursos" id="">
+                    <option value="Javascript">Javascript</option>
+                    <option value="HTML5">HTML5</option>
+                    <option value="CSS">CSS</option>
+                    <option value="SQL">SQL</option>
+                </select>
+
+                <h1>Opción Datalist la mejora manera de hacer una lista desplegable</h1>
+                <p>Esta opción permite que el usuario vaya digitando y se vayan buscnado las opciones</p>
+                <input list="Cursos">
+                <datalist id="Cursos">
+                    <option value="Javascript"></option>
+                    <option value="HTML5"></option>
+                    <option value="CSS3"></option>
+                    <option value="SQL"></option>
+                </datalist>
+            </section>
+
+            <section>
+                <h1>Botones</h1>
+                <input type="submit" value="Accionar">
+                <button type="submit">Ejecutar</button>
+            </section>
+
+            <section>
                 <video controls preload="auto">
                     <source src="./video/GettyImages-450897054.mp4">
                     <source src="./video/GettyImages-450897054_1_1.m4v">
