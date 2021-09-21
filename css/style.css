@@ -1,3 +1,10 @@
+/* SELECTOR UNIVERSAL para resetear las configuraciones por defecto*/
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
 header{
     background-color: #578F79;
 }
@@ -7,6 +14,10 @@ body{
 }
 
 main{
+    width: 100%;
+    height: 500px;
+    border: 10px solid grey;
+    padding: 20px 35px;
     background-color:white;
 }
 
@@ -31,6 +42,7 @@ main{
     display: inline-block;
 }
 
+/* CLASE ESPECÍFICA se llama a la etiqueta clase y se agrega la etiqueta que está dentro de esa clase*/
 .main-nav_item a {
     color: white;
     padding: 7px;
