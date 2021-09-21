@@ -1,0 +1,54 @@
+header{
+    background-color: #578F79;
+}
+
+body{
+    background-color:#E8FAF3;
+}
+
+main{
+    background-color:white;
+}
+
+.parrafo_1 {
+    color: chocolate;
+    font-size: 30px;
+}
+
+#parrafo_2 {
+    color: blue;
+    font-size: 20px;
+}
+
+.main-nav{
+    margin-top: 10px;
+    list-style: none;
+    padding-left: 0;
+    background-color: cadetblue;
+}
+
+.main-nav_item{
+    display: inline-block;
+}
+
+.main-nav_item a {
+    color: white;
+    padding: 7px;
+    border-radius: 3px;
+    text-decoration: none;
+    background-color: red;
+}
+
+/* SEUDOCLASES se agrega dos puntos luego de la clase */
+.main-nav_item a:hover {
+    color: black;
+}
+
+.main-nav_item a:active {
+    color: goldenrod;
+}
+
+/* SEUDOELEMENTOS se ponen dos veces los dos puntos */
+.main-nav_item a::after {
+    content: " | ";
+}

@@ -11,7 +11,7 @@
     </head>
     <body>
         <header>
-            <nav></nav>
+            <h1>Módulo de gestión de usuarios</h1>
         </header>
         <main>
             <h1>Título principal</h1>
@@ -64,21 +64,119 @@
             </section>
 
             <section>
+                <h1>Primer formulario</h1>
+                <form action="">
+                    <label for="Nombre">
+                        <span>¿Cuál es tu nombre?</span>
+                        <input type="text" id ="Nombre" placeholder="Escribe tu nombre">
+                    </label>
+                    <label for="fechaNacimiento">
+                        <span>¿Cuál es tu fecha de nacimiento?</span>
+                        <input type="date" id ="fechaNacimiento">
+                    </label>
+                    <label for="horaEstudio">
+                        <span>¿Cuál es la hora de preferencia?</span>
+                        <input type="time" id ="horaEstudio">
+                    </label>
+                </form>
+            </section>
+
+            <section>
+                <h1>Calendario de forma larga</h1>
+                <form action="">
+                    <label for="hora">
+                        <span>Hora</span>
+                        <input type="time" name="hora" id="hora">
+                    </label>
+                    <label for="dia">
+                        <span>Día</span>
+                        <input type="date" id="dia" name="dia"/>
+                    </label>
+                    <label for="semana">
+                        <span>Semana</span>
+                        <input type="week" id="semana" name="semana"/>
+                    </label>
+                    <label for="mes">
+                        <span>Mes</span>
+                        <input type="month" id="mes" name="mes"/>
+                    </label>
+                    <input type="submit" value="Enviar">
+                    </form>
+
+                    <h1>Calendario reducido</h1>
+                    <form action="">
+                        <label for="fecha">
+                            <span>Fecha</span>
+                            <input type="date" name="fecha" id="fecha">
+                        </label>
+                        <label for="hora">
+                            <span>Hora</span>
+                            <input type="time" name="hora" id="hora">
+                        </label>
+                        <input type="submit">
+
+                    </form>
+            </section>
+
+            <section>
+                <h1>Autocompletar con información obligatoria</h1>
+                <form action="">
+                    <label for="nombre">
+                        <span>¿Cuál es tu nombre?</span>
+                        <input type="text" name="nombre" id="nombre" autocomplete="name" required>
+                    </label>
+
+                    <label for="correo">
+                        <span>¿Cuál es tu correo?</span>
+                        <input type="email" name="correo" id="correo" autocomplete="email" required>
+                    </label>
+
+                    <label for="pais">
+                        <span>¿Cuál es tu país?</span>
+                        <input type="text" name="pais" id="pais" autocomplete="country" required>
+                    </label>
+
+                    <label for="postal">
+                        <span>¿Cuál es tu código postal?</span>
+                        <input type="number" name="postal" id="postal" autocomplete="postal-code" required>
+                    </label>
+                    <input type="submit">
+                </form>
+            </section>
+
+            <section>
+                <h1>Etiqueta Select FUNCIONA PERO NO ES LA MEJOR OPCIÓN</h1>
+                <select name="Cursos" id="">
+                    <option value="Javascript">Javascript</option>
+                    <option value="HTML5">HTML5</option>
+                    <option value="CSS">CSS</option>
+                    <option value="SQL">SQL</option>
+                </select>
+
+                <h1>Opción Datalist la mejora manera de hacer una lista desplegable</h1>
+                <p>Esta opción permite que el usuario vaya digitando y se vayan buscnado las opciones</p>
+                <input list="Cursos">
+                <datalist id="Cursos">
+                    <option value="Javascript"></option>
+                    <option value="HTML5"></option>
+                    <option value="CSS3"></option>
+                    <option value="SQL"></option>
+                </datalist>
+            </section>
+
+            <section>
+                <h1>Botones</h1>
+                <input type="submit" value="Accionar">
+                <button type="submit">Ejecutar</button>
+            </section>
+
+            <section>
                 <video controls preload="auto">
                     <source src="./video/GettyImages-450897054.mp4">
                     <source src="./video/GettyImages-450897054_1_1.m4v">
                 </video>
             </section>
-            <ul>
-                <li>Elemento 1</li>
-                <li>Elemento 2</li>
-                <li>Elemento 3</li>
-            </ul>
-            <ol>
-                <li>Elemento 1</li>
-                <li>Elemento 2</li>
-                <li>Elemento 3</li>
-            </ol>
+
         </main>
         <footer>
 
