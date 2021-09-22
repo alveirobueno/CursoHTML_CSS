@@ -1,0 +1,79 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+    /* LO ANTERIOR PERMITE QUE EL TAMAÑO POR DEFECTO DE LA FUENTE SEA DE 10PX, ASÍ QUE ES MÁS FÁCIL
+    CALCULAR LOS REM YA QUE USA UN SISTEMA DECIMAL. */
+}
+
+main {
+    width: 100vw;
+    height: 100vw;
+    background-color: bisque;
+}
+
+/*
+VIEWPORT: HACE REFERENCIA AL TAMAÑO DEL DISPOSITIVO.
+PORCENTAJE: HACE REFERENCIA AL TAMAÑO DEL CONTENEDOR CON RESPECTO AL TAMAÑO DEL PADRE.
+*/
+
+section {
+    width: 80%;
+    min-width: 375px;
+    /* TAMAÑO MINIMO DEL CONTENEDOR (ANCHO) */
+
+    max-width: 1024px;
+    /* TAMAÑO MÁXIMO DEL CONTENEDOR (ANCHO) */
+
+    min-height: 500px;
+    /* TAMAÑO MÍNIMO DEL CONTENEDRO (ALTO) */
+
+    margin: 0 auto;
+    /* ESTO CENTRA AUTOMÁTICAMENTE EL CONTENEDOR */
+
+    background-color: red;
+}
+
+/* p {
+    font-size: 16px;
+} */
+
+/* EM: ES UN TAMAÑO RELATIVO CON RESPECTO A SU PADRE DIRECTO, ASÍ QUE SE DEBE TENER CUIDADO CON LA PERSONALIZACIÓN
+DE CADA "EM" POR QUE EL TAMAÑO PUEDE VARIAR. */
+/* .text_container {
+    font-size: 2em;
+} */
+
+/* REM: */
+p {
+    font-size: 1.5rem;
+}
+
+.parent {
+    width: 80%;
+    max-width: 1024px;
+    margin: 0 auto;
+    border: 2px black dotted;
+
+}
+
+.box {
+   display: inline-block;
+   background-color: red;
+   width: 300px;
+   height: 100px;
+   border-radius: 10px;
+}
+
+#two {
+    background-color: green;
+    width: 200px;
+    position: relative;
+    left: -250px;
+    top: -50px;
+    border-radius: 20px;
+}

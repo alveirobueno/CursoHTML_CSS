@@ -10,15 +10,17 @@ header{
 }
 
 body{
-    background-color:#E8FAF3;
+    width: 1024px;
+    margin: auto;
+    background-color:#EFFFF9;
 }
 
 main{
-    width: 100%;
-    height: 500px;
-    border: 10px solid grey;
+    border-radius: 4px;
+    align-self: center;
+    /* border: 10px solid grey; */
     padding: 20px 35px;
-    background-color:white;
+    background-color:#E8FAF3;
 }
 
 .parrafo_1 {
@@ -64,3 +66,28 @@ main{
 .main-nav_item a::after {
     content: " | ";
 }
+
+/* COMBINADOR HERMANO ADYACENTE (ADJACENT SIBLING), APLICA LAS DECLARACIONES A P QUE ESTA CERCA DE H2 */
+/* h2 + p {
+    color: red;
+} */
+
+/* COMBINADOR HERMANO GENERAL (GENERAL SIBLING)
+APLICA LAS DECLARACIONES A TODAS LAS P CERCANAS DE H2 EN EL MISMO CONTENEDOR
+NO IMPORTA SIN NO ESTÁN ADYACENTES*/
+/* h2 ~ p {
+    color: red;
+} */
+
+/* COMBINADOR HIJOS DIRECTOS (CHILD) APLICA LAS DECLARACIONES A TODAS LAS P HIJAS
+DIRECTAS DEL CONTENEDOR SECTION*/
+article > p {
+    color: red;
+}
+
+/* COMBINADOR DESCENDIENTES APLICA LAS DECLARACIONES A TODAS LAS P QUE ESTEN DENTRO
+DEL CONTENEDOR SECTION*/
+section p {
+    color: red;
+}
+
