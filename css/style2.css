@@ -57,8 +57,7 @@ p {
     width: 80%;
     max-width: 1024px;
     margin: 0 auto;
-    border: 2px black dotted;
-
+    margin-top: 20px;
 }
 
 .box {
@@ -69,11 +68,16 @@ p {
    border-radius: 10px;
 }
 
+
 #two {
+    font-size: 18px;
+    text-align: center;
     background-color: green;
-    width: 200px;
+    width: 150px;
+    height: 30px;
     position: relative;
-    left: -250px;
+    left: -225px;
     top: -50px;
     border-radius: 20px;
+    padding: 5px;
 }
